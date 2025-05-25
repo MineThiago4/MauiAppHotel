@@ -13,53 +13,58 @@
             FontFamily="Bitter"
             FontSize="50"
             HorizontalTextAlignment="Center"/>
-        
-        <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo2}">
-            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-                <HorizontalStackLayout>
-                    <Label Text="Adultos:" 
-                           TextColor="{StaticResource OffWhite}"/>
-                    <Label Text="2" 
-                           TextColor="{StaticResource LaranjaG}"/>
-                </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
-                    <Label Text="Crianças:" 
-                           TextColor="{StaticResource OffWhite}"/>
-                    <Label Text="2" 
-                           TextColor="{StaticResource LaranjaG}"/>
-                </HorizontalStackLayout>
-            </HorizontalStackLayout>
-        </Frame>
 
         <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo2}">
-            <Grid ColumnDefinitions="*, *, *"
+            <VerticalStackLayout>
+                <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo}" BorderColor="{StaticResource CinzaChumbo}">
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <HorizontalStackLayout>
+                            <Label Text="Adultos:" 
+                           TextColor="{StaticResource OffWhite}"/>
+                            <Label Text="2" 
+                           TextColor="{StaticResource LaranjaG}"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Crianças:" 
+                           TextColor="{StaticResource OffWhite}"/>
+                            <Label Text="2" 
+                           TextColor="{StaticResource LaranjaG}"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo}" BorderColor="{StaticResource CinzaChumbo}">
+                    <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="auto, auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-In" TextColor="{StaticResource OffWhite}"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-Out" TextColor="{StaticResource OffWhite}"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia" TextColor="{StaticResource OffWhite}"/>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Check-In" TextColor="{StaticResource OffWhite}"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Check-Out" TextColor="{StaticResource OffWhite}"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="Estadia" TextColor="{StaticResource OffWhite}"/>
 
 
-                <Label Grid.Row="1" Grid.Column="0" Text="07/11/2001" TextColor="{StaticResource LaranjaG}"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="10/11/2001" TextColor="{StaticResource LaranjaG}"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="4" TextColor="{StaticResource LaranjaG}"/>
-            </Grid>
-        </Frame>
+                        <Label Grid.Row="1" Grid.Column="0" Text="07/11/2001" TextColor="{StaticResource LaranjaG}"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="10/11/2001" TextColor="{StaticResource LaranjaG}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="4" TextColor="{StaticResource LaranjaG}"/>
+                    </Grid>
+                </Frame>
 
-        <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo2}">
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                <Label Text="Valor Total: " 
+                <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo}" BorderColor="{StaticResource CinzaChumbo}">
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Label Text="Valor Total: " 
                        TextColor="{StaticResource OffWhite}"/>
-                <Label Text="R$: 500.0"
+                        <Label Text="R$: 500.0"
                        TextColor="{StaticResource LaranjaG}"/>
-            </HorizontalStackLayout>
-        </Frame>
+                    </HorizontalStackLayout>
+                </Frame>
 
+            </VerticalStackLayout>
+        </Frame>
         <Button Text="Voltar"
                 Clicked="Button_Clicked_Voltar"
                 HorizontalOptions="Center"
                 BackgroundColor="{StaticResource LaranjaG}"
                 BorderColor="{StaticResource LaranjaG}"/>
-        
+
     </VerticalStackLayout>
 </ContentPage>
