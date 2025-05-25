@@ -74,7 +74,8 @@
                                TextColor="{StaticResource LaranjaG}"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
                 </Frame>
 
@@ -89,6 +90,7 @@
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
@@ -100,7 +102,11 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" TextColor="{StaticResource OffWhite}" BackgroundColor="{StaticResource LaranjaG}" BorderColor="{StaticResource LaranjaG}"  />
+                <Button Text="Avançar"
+                        Clicked="Button_Clicked_Avancar"
+                        TextColor="{StaticResource OffWhite}" 
+                        BackgroundColor="{StaticResource LaranjaG}" 
+                        BorderColor="{StaticResource LaranjaG}"  />
 
             </VerticalStackLayout>
         </Frame>
