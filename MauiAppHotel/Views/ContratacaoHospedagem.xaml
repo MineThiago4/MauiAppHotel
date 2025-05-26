@@ -5,10 +5,6 @@
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource AzulMarinhoEscuro}">
-
-    
-    
-    
     
     <VerticalStackLayout>
         
