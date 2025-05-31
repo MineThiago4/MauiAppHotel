@@ -6,6 +6,7 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource AzulMarinhoEscuro}">
     
+    
     <VerticalStackLayout>
         
         <HorizontalStackLayout VerticalOptions="Start" Padding="10" Spacing="10">
